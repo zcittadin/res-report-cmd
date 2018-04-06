@@ -35,6 +35,7 @@ public class ReportGenerator extends Application {
 		String path = "C://Resicolor_App_Trunk//Relatorios//Processo//" + folder + "//lote_" + lote + ".pdf";
 
 		Task<Integer> reportTask = new Task<Integer>() {
+			@SuppressWarnings("unused")
 			@Override
 			protected Integer call() throws Exception {
 				String periodo = PeriodFormatter.formatPeriod(produto.getDtInicial(), produto.getDtFinal());
